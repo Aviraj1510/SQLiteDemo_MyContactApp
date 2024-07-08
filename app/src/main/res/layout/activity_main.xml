@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAE8E8"
+    tools:context=".MainActivity">
+
+
+    <ImageButton
+        android:id="@+id/buttonSave"
+        android:layout_width="46dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/editTextEmail"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="94dp"
+        android:background="@drawable/baseline_download_24"
+        android:text="Save" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginEnd="80dp"
+        android:drawablePadding="12dp"
+        android:paddingStart="10dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_person_icon_focused"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="text"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_below="@+id/editTextName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/custom_input"
+        android:layout_marginStart="80dp"
+        android:drawablePadding="12dp"
+        android:paddingStart="10dp"
+        android:drawableStart="@drawable/custom_phone_icon_focused"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="80dp"
+        android:textColor="@color/black"
+        android:ems="10"
+        android:hint="Number"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_below="@+id/editTextNumber"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/custom_input"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="80dp"
+        android:drawablePadding="12dp"
+        android:paddingStart="10dp"
+        android:drawableStart="@drawable/custom_email_icon_focused"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="335dp"
+        android:layout_above="@+id/editTextName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/mycontactbackground"
+        android:layout_marginBottom="-160dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="My ContactBook"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/profileImg"
+            android:layout_width="74dp"
+            android:layout_height="79dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="171dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="171dp"
+            android:layout_marginBottom="719dp"
+            android:src="@drawable/baseline_import_contacts_24" />
+    </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/btnContact"
+        android:layout_width="100dp"
+        android:layout_height="94dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/baseline_import_contacts_24"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/gmailConnect"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:layout_below="@+id/buttonSave"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="97dp"
+        android:layout_marginEnd="-1dp"
+        android:text="Connect With Google"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
